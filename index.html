@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Button Click Example</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Click the button to display "Hello"</h1>
+    <button onclick="displayHello()">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        function displayHello() {
+            document.getElementById('message').innerText = 'Hello';
+        }
+    </script>
 </body>
 </html>
